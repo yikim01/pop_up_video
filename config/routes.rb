@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'band#index'
+  root 'welcome#index'
 
 
 end

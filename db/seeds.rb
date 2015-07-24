@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Band.destroy_all
+MusicVideo.destroy_all
+
+Band.create
+
+mac = Band.create(name: "Fleetwood Mac", genre: "Country Rock")
+
+mac.music_videos << MusicVideo.create(title: "Landslide", video_embed_uri: "jajsdlksafjalksfjakljfs")
